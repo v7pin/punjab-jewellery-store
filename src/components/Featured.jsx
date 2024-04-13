@@ -35,10 +35,10 @@ const Featured = () => {
   const sliderItems = [
     { title: "Ambar", image: "s11.jpg" },
     { title: "Safira", image: "s10.jpg" },
-    { title: "Topaz", image: "s12.jpg" },
-    { title: "Topaz", image: "s12.jpg" },
-    { title: "Topaz", image: "s12.jpg" },
-    { title: "Topaz", image: "s12.jpg" },
+    { title: "Topaz", image: "s6.jpg" },
+    { title: "Diamond ", image: "s2.jpg" },
+    { title: "Onyx", image: "s14.jpg" },
+    { title: "Pearl ", image: "s20.jpg" },
     // ...additional items
   ];
 
@@ -59,7 +59,7 @@ const Featured = () => {
       <section id="featured" className="container mx-auto py-12 mt-6 md:px-40">
         <div className="title flex flex-col items-center justify-center mb-8">
           <div className="w-28 h-0.5 bg-[#b48c56] mt-2 mb-10 "></div>
-          <h2 className="text-3xl font-medium font-cardo text-center uppercase relative tracking-widest">
+          <h2 className="text-4xl font-medium font-bebas text-center uppercase relative tracking-widest">
             Featured
           </h2>
         </div>
@@ -77,7 +77,7 @@ const Featured = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="mx-auto h-64 rounded-t-lg object-cover w-full"
+                className="mx-auto h-64 rounded-t-lg object-cover w-full sm:h-16 "
                 style={{ height: "300px", width: "100%" }}
               />
               <h3 className="text-2xl font-semibold my-4">{item.title}</h3>

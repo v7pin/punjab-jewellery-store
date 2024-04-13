@@ -3,15 +3,15 @@ import React from "react";
 const Gallery = () => {
   const galleryItems = [
     { id: 1, imgSrc: "s18.jpg", description: "Jewellery Description 1" },
-    { id: 2, imgSrc: "s19.jpg", description: "Jewellery Description 2" },
-    { id: 3, imgSrc: "s11.jpg", description: "Jewellery Description 3" },
-    { id: 1, imgSrc: "s18.jpg", description: "Jewellery Description 1" },
-    { id: 2, imgSrc: "s19.jpg", description: "Jewellery Description 2" },
-    { id: 3, imgSrc: "s11.jpg", description: "Jewellery Description 3" },
-    { id: 1, imgSrc: "s18.jpg", description: "Jewellery Description 1" },
-    { id: 2, imgSrc: "s19.jpg", description: "Jewellery Description 2" },
-    { id: 3, imgSrc: "s11.jpg", description: "Jewellery Description 3" },
-    { id: 3, imgSrc: "s11.jpg", description: "Jewellery Description 3" },
+    { id: 2, imgSrc: "j23.jpeg", description: "Jewellery Description 2" },
+    { id: 3, imgSrc: "s4.jpg", description: "Jewellery Description 3" },
+    { id: 4, imgSrc: "j2.jpeg", description: "Jewellery Description 1" },
+    { id: 5, imgSrc: "j27.jpeg", description: "Jewellery Description 2" },
+    { id: 6, imgSrc: "j1.jpeg", description: "Jewellery Description 3" },
+    { id: 7, imgSrc: "j18.jpeg", description: "Jewellery Description 1" },
+    { id: 8, imgSrc: "j25.jpeg", description: "Jewellery Description 2" },
+    { id: 9, imgSrc: "j19.jpeg", description: "Jewellery Description 3" },
+    { id: 10, imgSrc: "j4.jpeg", description: "Jewellery Description 3" },
   ];
 
   return (
@@ -19,7 +19,7 @@ const Gallery = () => {
       <div className="container mx-auto sm:px-4">
         <div className="title flex flex-col items-center justify-center mb-10">
           <div className="w-28 h-0.5 bg-[#b48c56] mt-2 mb-8 "></div>
-          <h2 className="text-3xl font-medium font-cardo mb-6 text-center uppercase relative tracking-wider">
+          <h2 className="text-4xl font-medium font-bebas mb-6 text-center uppercase relative tracking-wider">
             Gallery
           </h2>
         </div>

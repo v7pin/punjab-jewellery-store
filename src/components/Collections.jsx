@@ -47,7 +47,7 @@ const Collections = () => {
       <div className="container mx-auto">
       <div className="title flex flex-col items-center justify-center mb-10">
           <div className="w-40 h-0.5 bg-[#b48c56]  mb-8 "></div>
-          <h2 className="text-3xl font-medium font-cardo text-center mb-4 uppercase relative tracking-widest">
+          <h2 className="text-4xl font-medium font-bebas text-center mb-4 uppercase relative tracking-widest">
             Collections
           </h2>
         </div>

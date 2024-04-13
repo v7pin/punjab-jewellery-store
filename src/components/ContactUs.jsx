@@ -27,8 +27,7 @@ const ContactUs = () => {
               Get in touch for inquiries
             </h1>
             <p className="font-belleza text-lg  ">
-              Have questions or need further information? Leave your number and
-              our team will call you back.
+              Have questions or need further information? Leave you contact details.
             </p>
           </div>
           <div className="right w-full md:w-1/5 mt-5 md:mt-0 md:mr-20">
@@ -67,8 +66,9 @@ const ContactUs = () => {
                   <h2 className="text-lg font-semibold mb-4">
                     Our Information
                   </h2>
-                  <p className="mb-2">Punjab, India</p>
-                  <p>+91 xxxxxxxxxx</p>
+                  <p className="mb-2">2767 W Shaw Ave Suite 126 Fresno, CA 93711</p>
+                  
+                  <p className="mb-2">559-776-6011</p>
                 </div>
 
                 {/* Quick Links Section */}
@@ -168,8 +168,8 @@ const ContactUs = () => {
                   <h2 className="text-lg font-semibold mb-4">
                     Our Information
                   </h2>
-                  <p className="mb-2">Punjab, India</p>
-                  <p>+91 xxxxxxxxxx</p>
+                  <p className="mb-2">2767 W Shaw Ave Suite 126 Fresno, CA 93711</p>
+                  <p>559-776-6011</p>
                 </div>
 
                 {/* Quick Links Section */}

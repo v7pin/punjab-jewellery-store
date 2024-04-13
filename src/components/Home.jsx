@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-scroll'; // Import the Link component from react-scroll
 
 const Home = () => {
+
+  
   return (
     <section id="home" className="relative flex justify-center items-center min-h-screen">
       <div className="container mx-auto flex justify-start items-center p-0 md:p-15">
@@ -35,11 +37,19 @@ const Home = () => {
         loop
         muted
         playsInline
-        className="absolute top-0 right-0 bottom-0 w-full h-auto max-sm:mt-[-11rem] min-h-screen"
+        className="absolute top-0 right-0 bottom-0 w-full h-auto max-sm:mt-[-11rem] max-md:mt-[-16rem] min-h-screen"
         id="myVideo"
       >
         <source src="Punjab_Jewelers_main.mp4" type="video/mp4" />
       </video>
+      <div className="md:hidden absolute bottom-0 right-0 py-4 px-8  ">
+        <img
+          src="logo_new.png" // Replace with your image path
+          alt="Decorative"
+          className="opacity-50" // Adjust opacity as needed
+          style={{ width: '100px', height: '150px' }} // Adjust size as needed
+        />
+      </div>
     </section>
   );
 };

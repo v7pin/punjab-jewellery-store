@@ -5,10 +5,10 @@ import { useState } from "react";
 
 const NewCollections = () => {
   const items = [
-    { id: 1, imgSrc: "s8.jpg", title: "Ambar" },
-    { id: 2, imgSrc: "s9.jpg", title: "Safira" },
-    { id: 3, imgSrc: "s13.jpg", title: "Topaz" },
-    { id: 4, imgSrc: "s14.jpg", title: "Topaz" },
+    { id: 1, imgSrc: "j15.jpeg", title: "Ambar" },
+    { id: 2, imgSrc: "j11.jpeg", title: "Safira" },
+    { id: 3, imgSrc: "j26.jpeg", title: "Topaz" },
+    { id: 4, imgSrc: "j7.jpeg", title: "Pearl" },
   ];
 
   const [isContactModalOpen, setisContactModalOpen] = useState(false);
@@ -22,11 +22,11 @@ const NewCollections = () => {
   };
 
   return (
-    <section id="newcollections" className="py-24 bg-white mb-20">
+    <section id="newcollections" className="py-24 bg-white   mb-20">
       <div className="container mx-auto">
       <div className="title flex flex-col items-center justify-center mb-10">
           <div className="w-24 h-0.5 bg-[#b48c56] mt-2 mb-8 "></div>
-          <h2 className="text-3xl font-medium font-cardo text-center mb-4 uppercase relative tracking-widest">
+          <h2 className="text-4xl font-medium font-bebas text-center mb-4 uppercase relative tracking-widest">
             Newest
           </h2>
         </div>
