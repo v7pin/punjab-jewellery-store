@@ -1,0 +1,192 @@
+/* Featured.css */
+
+
+
+
+.card-title {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-button {
+  background-color: #b48c56;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #9c7a4f;
+}
+
+.offer-tag {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f2d2a3;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+img {
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Slider dots custom styles */
+.slick-dots li button:before {
+  color: #b48c56;
+  font-size: 10px;
+  border-radius: 5px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #b48c56;
+}
+
+/* Add responsive design if necessary */
+@media (max-width: 768px) {
+  .card-container {
+    margin: 0 15px;
+  }
+}
+
+
+
+
+.slick-list {
+  margin: 0 -10px; /* Compensates for the slide margin for proper alignment */
+}
+
+.group:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the OFFERS tag */
+.offer-tag {
+  position: absolute;
+  top: -8px; /* Raise the tag above the card slightly */
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(120deg, #fad961, #f76b1c); /* Modern gradient */
+  color: white;
+  font-size: 0.75rem; /* Adjust size as needed */
+  font-family: 'Sans-serif'; /* Use a modern font-family */
+  font-weight: bold;
+  padding: 0.25rem 0.75rem; /* Adjust padding as needed */
+  border-radius: 0.25rem; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  z-index: 10;
+  white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+
+/* Styles for the Contact Us button */
+
+
+.group:hover .contact-btn {
+  background-color: #f76b1c; /* Lighter color on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Larger shadow on hover for "lifting" effect */
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+
+/* You might need to adjust your slider dot styles as well */
+.slick-dots li button:before {
+  color: #b48c56; /* Color of the dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #b48c56; /* Color of the active dot */
+}
+
+/* Rest of your CSS */
+
+/* Card container that holds each slide */
+.card-container {
+  position: relative;
+  overflow: hidden; /* Ensure that anything sliding up is clipped */
+}
+
+/* Contact details that will slide up */
+.contact-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #b48c56; /* Your custom brown */
+  color: white;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(100%); /* Start hidden below the card */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Animate in */
+  text-align: center; /* Center the text */
+  padding: 1rem; /* Give some spacing */
+}
+
+/* Hover effect on the card container */
+.card-container:hover .contact-details {
+  opacity: 1; /* Show the details */
+  transform: translateY(0); /* Slide up to show details */
+}
+
+/* Adjust the styles for the contact button */
+.contact-btn {
+  /* ...existing styles... */
+  visibility: hidden; /* Hide the button, we're using contact-details now */
+}
+
+/* Ensure the card content scales nicely */
+.card-container:hover {
+  transform: scale(1.05); /* Enlarge the card */
+  z-index: 10; /* Make sure it's above other content */
+}
+
+/* Style for the phone icon and text */
+.contact-details .flex {
+  align-items: center; /* Align icon and text vertically */
+}
+
+
+
+/* Existing styles */
+
+/* Golden background for the offers tag */
+.bg-gold {
+  background-color: #D4AF37; /* Replace with the exact color you prefer */
+}
+
+/* Contact Us button styling */
+.contact-btn {
+  /* Existing styles */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: translateY(100%); /* Start below the card */
+  opacity: 0; /* Start invisible */
+}
+
+/* Show the Contact Us button on hover */
+.group:hover .contact-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Card container styling */
+.card-container {
+  /* Existing styles */
+  overflow: hidden; /* Ensure the contact button doesn't show outside the card's boundaries */
+}

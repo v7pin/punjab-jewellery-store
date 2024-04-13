@@ -1,0 +1,60 @@
+.box {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  
+}
+
+.box img {
+  transition: all 0.3s ease-in-out;
+}
+
+.box h1, .box h3 {
+  transition: color 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(5px);
+}
+
+.box:hover img {
+  opacity: 0.7;
+}
+
+.box:hover h1, .box:hover h3 {
+  color: white;
+}
+
+.box button {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+}
+
+.box:hover button {
+  opacity: 1;
+  visibility: visible;
+  bottom: 10px;
+}
+
+/* Utility classes */
+.bg-customBrown {
+  background-color: #b48c56;
+}
+
+.text-customBrown {
+  color: #b48c56;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.hover\:bg-customBrownDark:hover {
+  background-color: #a07448; /* Darken the custom brown color on hover */
+}
+
+/* Tailwind provides responsive design out of the box, so use it to manage padding, margin, etc. */
