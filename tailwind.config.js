@@ -10,6 +10,7 @@ export default {
         'belleza': ['Belleza', 'sans-serif'],
         'bebas': ['Bebas Neue', 'cursive'],
         'cardo': ['Cardo', 'serif'],
+        'dancing': ['Dancing Script', 'cursive'],
       },
       colors: {
         customBrown: '#b48c56',
