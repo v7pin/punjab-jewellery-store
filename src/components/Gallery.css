@@ -1,0 +1,25 @@
+/* Gallery.css */
+
+/* Styles to ensure images are centered and of the same size */
+@media (max-width: 768px) {
+  /* Target the gallery item for small screens */
+  .gallery-item {
+    width: 100%; /* Full width on small screens */
+    display: flex; /* Use flex to center items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 2rem; /* Add some margin to the bottom of each item */
+  }
+
+  .gallery-item img {
+    width: 80%; /* Set image width to 80% of its container for smaller screens */
+    max-width: 300px; /* Optional: you can set a max-width if you want a maximum size */
+    max-height: 400px; /* Keep image aspect ratio */
+    object-fit: cover; /* Cover the area of the figure element without stretching */
+  }
+
+  /* Optional: if you want all images to be the exact same height, uncomment below */
+  /* .gallery-item img {
+    height: 150px; /* Set a fixed height for all images */
+  /* } */
+}

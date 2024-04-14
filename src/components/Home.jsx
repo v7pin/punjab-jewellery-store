@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-scroll'; // Import the Link component from react-scroll
+import { Link } from 'react-scroll';
+import './Home.css'; // Make sure this stylesheet is correctly linked and contains relevant styles
 
 const Home = () => {
+  const marqueeText = "🌟 New Items Available - Discover our latest collection! 🌟 Reach out to us for exclusive deals! 🌟";
 
-  
   return (
     <section id="home" className="relative flex justify-center items-center min-h-screen">
       <div className="container mx-auto flex justify-start items-center p-0 md:p-15">
@@ -32,6 +33,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="md:hidden marquee">
+        <div className="marquee-content">
+          {marqueeText}
+        </div>
+      </div>
       <video
         autoPlay
         loop
@@ -42,11 +48,12 @@ const Home = () => {
       >
         <source src="Punjab_Jewelers_main.mp4" type="video/mp4" />
       </video>
-      <div className="md:hidden absolute bottom-0 right-0 py-4 px-8  ">
+      {/* Updated styles for the image div to center it at the bottom of the screen */}
+      <div className="md:hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 py-4 px-8">
         <img
           src="logo_new.png" // Replace with your image path
           alt="Decorative"
-          className="opacity-50" // Adjust opacity as needed
+          className="opacity-60" // Adjust opacity as needed
           style={{ width: '100px', height: '150px' }} // Adjust size as needed
         />
       </div>

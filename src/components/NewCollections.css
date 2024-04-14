@@ -58,3 +58,29 @@
 }
 
 /* Tailwind provides responsive design out of the box, so use it to manage padding, margin, etc. */
+
+/* NewCollections.css */
+
+@media (max-width: 768px) {
+  /* Style adjustments for the New Collections cards on mobile screens */
+  .new-collection-card {
+    padding: 8px; /* Reduced padding for smaller screens */
+    margin: 0 auto; /* Center the card within its container */
+  }
+
+  .new-collection-card img {
+    height: auto; /* Adjust image height automatically to maintain aspect ratio */
+    max-height: 400px;
+    max-width: 250px; /* Set a maximum height for the images */
+  }
+
+  .new-collection-card h1 {
+    font-size: 1.5rem; /* Smaller font size for the title */
+  }
+
+  .new-collection-card button {
+    padding: 10px 15px; /* Smaller padding for the button */
+    font-size: 0.875rem; /* Smaller font size for the button text */
+  }
+}
+

@@ -178,6 +178,33 @@ img {
   cursor: pointer;
 }
 
+/* Featured.css */
+/* Featured.css - Add these styles at the bottom of your existing file */
 
+@media (max-width: 768px) {
+  .slick-slide {
+    display: flex !important; /* Important to override any inline styles by the library */
+    justify-content: center; /* Center the card horizontally */
+    align-items: center; /* Center the card vertically if needed */
+  }
 
-/* ... */
+  .featured-card {
+    max-width: 400px; /* Smaller width for the card */
+    margin: 0 auto; /* Additional centering for the card */
+  }
+
+  .featured-card img {
+    max-width:100%; /* Ensure the image does not exceed the container width */
+   max-height: 80%; /* Maintain aspect ratio */
+  }
+
+  .featured-card h3 {
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .featured-card .contact-details {
+    font-size: 0.8rem; /* Adjust contact details font size as needed */
+  }
+}
+

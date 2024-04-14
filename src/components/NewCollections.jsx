@@ -34,7 +34,7 @@ const NewCollections = () => {
           {items.map((item) => (
             <div
               key={item.id}
-              className="box bg-white rounded-lg shadow-2xl border-t-2 border-l-2 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl cursor-pointer"
+              className="new-collection-card box bg-white rounded-lg shadow-2xl border-t-2 border-l-2 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl cursor-pointer"
             >
               <div className="p-6">
                 <div className="label-new bg-customBrown text-white py-1 px-3 inline-block mb-4">

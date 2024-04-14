@@ -1,0 +1,30 @@
+@keyframes slide-right-to-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee {
+  overflow: hidden;
+  position: absolute;
+  top: 62px; /* Set this to the height of your navbar */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.5rem 0;
+  margin: 5px;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: slide-right-to-left 9s linear infinite;
+  white-space: nowrap;
+  margin: 4px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Optional: Add this to remove the horizontal scrollbar */
+body {
+  overflow-x: hidden;
+}

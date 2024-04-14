@@ -37,7 +37,6 @@ const Featured = () => {
     { title: "Safira", image: "s10.jpg" },
     { title: "Topaz", image: "s6.jpg" },
     { title: "Diamond ", image: "s2.jpg" },
-    { title: "Onyx", image: "s14.jpg" },
     { title: "Pearl ", image: "s20.jpg" },
     // ...additional items
   ];
@@ -68,7 +67,7 @@ const Featured = () => {
             // Added 'group' class for hover control and 'relative' class for positioning
             <div
               key={index}
-              className="group  text-center p-10 rounded-lg shadow-xl border-2 bg-white mx-0.5 relative my-10 transition-all duration-300 ease-in-out transform hover:scale-105"
+              className="group  text-center p-10 rounded-lg shadow-xl border-2 bg-white mx-0.5 relative my-10 transition-all duration-300 ease-in-out transform hover:scale-105 featured-card"
             >
               {/* OFFERS tag styled as per your screenshot */}
               <div className="offer-tag absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gold text-white text-base font-bold px-3 py-1 rounded-md z-10">
